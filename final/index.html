@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Off</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lights Off</h1>
+    </header>
+    <div class="container">
+    </div>
+    <div class="button-container">
+        <p>Select a level:</p>
+        <p>Current Level: <span id="currentLevel">Easy</span></p>
+        <button onclick="setLevel('easy')">Easy</button>
+        <button onclick="setLevel('hard')">Hard</button>
+        <button onclick="resetGame()">Reset</button>
+        <button id="addendumButton">Addendum</button>
+    </div>
+    <div id="addendum" class="hidden">
+        <h2>Addendum</h2>
+        <p>Develop a Lights Off game to gain hands-on experience in JavaScript, CSS, and HTML.</p>
+        <p>This game project was a valuable learning experience. Here are some key points to consider:</p>
+        <ol>
+            <li><strong>Development Background:</strong> The project was initiated to explore JavaScript, CSS, and HTML development.</li>
+            <li><strong>Learning Goals:</strong> I aimed to gain hands-on experience in web development and JavaScript programming.</li>
+            <li><strong>Technologies Used:</strong> The game was developed using JavaScript for interactivity, CSS for styling, and HTML for structure.</li>
+            
+        </ol>
+    </div>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <audio id="onSound" src="on.wav"></audio>
+    <audio id="offSound" src="off.wav"></audio>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
